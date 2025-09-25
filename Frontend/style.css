@@ -1,0 +1,124 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:
+        linear-gradient(120deg, #1e3c72, #2a5298);
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    background: rgba(0,0,0,0.6);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    color: #ffd700;
+    margin-bottom: 25px;
+}
+
+/* Form styling with glassmorphism */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 25px;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+form input, form button {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.4);
+    flex: 1 1 180px;
+    background: rgba(255,255,255,0.25);
+    color: #fff;
+    outline: none;
+    transition: 0.3s;
+}
+
+form input:focus {
+    background: rgba(255,255,255,0.35);
+    border-color: #ffd700;
+}
+
+form button {
+    background-color: #ffd700;
+    color: #1e3c72;
+    border: none;
+    cursor: pointer;
+    flex: 1 1 100px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #ffea00;
+}
+
+#cancelEdit {
+    background-color: #ff4c4c;
+    display: none;
+}
+
+/* Cards container */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* Card styling with glass + shadow */
+.card {
+    background: rgba(255,255,255,0.15);
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: #fff;
+    backdrop-filter: blur(8px);
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.6);
+}
+
+.card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.card h3 { margin: 8px 0 4px 0; }
+.card p { margin: 4px 0; font-size: 0.9rem; color: #fff; }
+
+.card .action-btn {
+    padding: 6px 12px;
+    margin: 5px 3px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.edit-btn { background: #4CAF50; color: white; }
+.delete-btn { background: #f44336; color: white; }
+
+@media(max-width:600px){
+    form input { flex: 1 1 100%; }
+}
