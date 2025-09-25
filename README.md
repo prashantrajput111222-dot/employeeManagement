@@ -1,4 +1,4 @@
-
+🏢 Employee Management System
 The Employee Management System is a comprehensive web-based application designed to streamline the management of employee data within an organization. Developed using Spring Boot, Java, and MongoDB, this system provides a centralized platform for HR teams and managers to efficiently handle all employee-related operations. It offers a secure, scalable, and user-friendly interface, making administrative tasks like record keeping, reporting, and data retrieval effortless.
 ✨ Key Features:
 
